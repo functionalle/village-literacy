@@ -4,12 +4,22 @@
 
 ## 已实现
 
-- 一年级上册 24 个示例字卡，展示汉字、拼音和组词
+- 一年级上、下册识字卡，支持按册切换和搜索汉字、拼音、组词
 - 浏览器语音发音；支持设备上使用语音识别跟读
-- 笔顺演示、触屏/鼠标描红
+- 触屏/鼠标描红
 - 今日任务、复习队列、学习进度和连续学习天数
 - 使用 `localStorage` 保存进度，关闭页面后仍然保留
 - 儿童端/长辈端切换、无广告和离线使用界面
+- 学习进度按册次和汉字保存，并兼容旧版 24 个示例字的进度
+
+## 字表来源
+
+字卡依据公开的统编版识字表资料整理：
+
+- [一年级上册识字表（搜狐，2024）](https://news.sohu.com/a/823019986_121124337)
+- [一年级下册识字表（21世纪教育网，2020）](https://zy.21cnjy.com/7134253)
+
+不同年份、地区使用的教材可能有修订，课堂教学请以正在使用的教材为准。
 
 ## 使用
 
@@ -20,7 +30,7 @@
 仓库已附带 GitHub Pages 自动发布工作流：`.github/workflows/pages.yml`。
 
 1. 登录 GitHub，新建一个公开仓库，例如 `village-literacy`。
-2. 将本项目的 `index.html`、`styles.css`、`app.js`、`README.md` 和 `.github/workflows/pages.yml` 上传到仓库，目录结构保持不变。
+2. 将本项目的 `index.html`、`styles.css`、`grade-one.css`、`app.js`、`curriculum.js`、`README.md` 和 `.github/workflows/pages.yml` 上传到仓库，目录结构保持不变。
 3. 在仓库的 **Settings → Pages → Build and deployment** 中，将 **Source** 设为 **GitHub Actions**。
 4. 打开 **Actions**，等待 **Publish website** 运行成功。发布地址格式为 `https://你的GitHub用户名.github.io/village-literacy/`。
 5. 用手机微信打开该 HTTPS 地址并转发给其他微信用户。
